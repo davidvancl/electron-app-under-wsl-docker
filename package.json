@@ -1,0 +1,15 @@
+{
+  "name": "electron-application",
+  "version": "1.0.0",
+  "description": "Testing electron framework",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Vancl",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.2"
+  }
+}
