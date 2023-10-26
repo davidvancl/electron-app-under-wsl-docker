@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  electron-application:
+    build: .
+    environment:
+      - WATCHPACK_POLLING=true
+      - VNC_SECRET=Aa123456
+    ports:
+      - "8086:8086"
+    volumes:
+      - ../:/electron-application
+      - ~/.gitconfig:/root/.gitconfig:z
+    stdin_open: true
+    tty: true
+    user: devuser
+    restart: unless-stopped
